@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Violense';
+    src: url('Violense.otf') format('truetype');
+    
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: left;
+}
+
+/* Image: sidebar */
+.sidebar{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    
+}
+
+.sidebar-img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Glorando Regular';
+    font-size: 45px;
+    color: #918d8d;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+    margin: 15px;
+    padding-bottom: 15px;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    
+}
+
+/* Text section */
+.text-section {
+    background-color: #000000;
+    padding: 170px 130px 60px 48px;
+    
+}
+
+.text-section {
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Glorando Regular';
+    color: rgb(189, 189, 189);
+}
+
+.text:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+/* Form section */
+form {
+    background-color: #000000;
+    padding-bottom: 204px;
+}
+
+ /* color form*/
+#first_name, #last_name, #email, #phone_number, #pwd, #pwd_confirmation {
+    background-color: #271704;
+}
+
+::placeholder {
+    font-size: 12px;
+}
+
+/* Form box */
+.form-box {
+    background-color: #1b0e02;
+    box-shadow: 0px 1px 1px rgb(26, 16, 1);
+    padding: 24px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 72px;
+    row-gap: 24px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #8d8d8d;
+    width: 250px;
+}
+
+.form-row input {
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border-style: none;
+    width: 100%;
+    padding: 7px;
+    margin-top: 2px; 
+}
+
+/* Focus */
+.form-row input:focus {
+    border: 1px solid #1b0e02;
+}
+
+/* add helping text after the password input if it's invalid */
+label:has(#pwd:invalid)::after {
+    content: "*Passwords do not match.";
+    color: #d55c5f;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+/* creat account and login buttons */
+.create-account-btn, .login {
+    font-size: 18px;
+}
+
+.create-account-btn, .login-link {
+    font-weight: 600;
+}
+
+.create-account-btn, .login-link {
+    background-color: #1b0e02;
+    color: #a5a1a1;
+    padding: 16px 54px;
+    margin: 38px 48px;
+    border: none;
+    border-radius: 8px;
+}
+
+.login {
+    margin: 0 20px;
+    color: gray;
+}
+
+.login-a {
+    color: #5f4227;
+    padding: 10px;
+    text-decoration: none;
+    
+}
